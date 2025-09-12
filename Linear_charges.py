@@ -1,9 +1,9 @@
- streamlit as st
- numpy as np
- joblib
+ import streamlit as st
+ import numpy as np
+ import joblib
 
 # Load the trained Linear Regression model
-model = joblib.load('/content/linear_regression_model.joblib')
+st.title("Insurance Charge Prediction")
 
 claim_amount = st.number_input("Claim Amount", min_value=0.0, format="%.2f")
 past_consultations = st.number_input("Number of Past Consultations", min_value=0)
