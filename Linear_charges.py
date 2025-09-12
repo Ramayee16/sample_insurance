@@ -3,7 +3,7 @@
  import joblib
 
 # Load the trained Linear Regression model
-st.title("Insurance Charge Prediction")
+model = joblib.load('/content/linear_regression_model.joblib')
 
 claim_amount = st.number_input("Claim Amount", min_value=0.0, format="%.2f")
 past_consultations = st.number_input("Number of Past Consultations", min_value=0)
