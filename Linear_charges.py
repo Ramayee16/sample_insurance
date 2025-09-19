@@ -1,6 +1,6 @@
- import streamlit as st
- import numpy as np
- import joblib
+import streamlit as st
+import numpy as np
+import joblib
 
 # Load the trained Linear Regression model
 model = joblib.load('/content/linear_regression_model.joblib')
